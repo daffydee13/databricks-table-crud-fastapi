@@ -11,7 +11,7 @@ DB_DATABASE = os.environ.get("DB_DATABASE")
 DB_HTTP_PATH = os.environ.get("DB_HTTP_PATH")
 
 engine = create_engine(
-    f"databricks+pyhive://token:{DB_ACCESS_TOKEN}@westeurope.azuredatabricks.net:443/{DB_DATABASE}",
+    f"databricks+pyhive://token:{DB_ACCESS_TOKEN}@adb-8464116950781563.3.azuredatabricks.net:443/{DB_DATABASE}",
     connect_args={"http_path": DB_HTTP_PATH},
 )
 
